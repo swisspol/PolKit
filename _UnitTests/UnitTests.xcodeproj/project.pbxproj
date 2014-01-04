@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,15 +26,12 @@
 		E2004A460F3D645E0025B23C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24D2E4B0E95E95700E298A9 /* IOKit.framework */; };
 		E2004A470F3D645E0025B23C /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E24D2ABB0E92F35B00E298A9 /* libcrypto.dylib */; };
 		E2004A480F3D645F0025B23C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E24D2ACC0E92F38000E298A9 /* libz.dylib */; };
-		E2004A490F3D645F0025B23C /* libsvn_client-1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E24D2B960E92F40600E298A9 /* libsvn_client-1.dylib */; };
-		E2004A4A0F3D64600025B23C /* libsvn_subr-1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E24D2B980E92F40600E298A9 /* libsvn_subr-1.dylib */; };
 		E2004A4B0F3D64600025B23C /* libapr-1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E24D2B9A0E92F41300E298A9 /* libapr-1.dylib */; };
 		E2004A4C0F3D64640025B23C /* DataStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E286099A0F28F47D0032DF7D /* DataStream.m */; };
 		E2004A4D0F3D64650025B23C /* DiskImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24D2A3E0E92F29200E298A9 /* DiskImageController.m */; };
 		E2004A4E0F3D64650025B23C /* Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E24D2A360E92F29200E298A9 /* Keychain.m */; };
 		E2004A4F0F3D64660025B23C /* LoginItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 2394F5820F2FF2C10046622E /* LoginItems.m */; };
 		E2004A500F3D64670025B23C /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E24D2A340E92F29200E298A9 /* MD5.m */; };
-		E2004A510F3D64670025B23C /* SVNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E24D2A380E92F29200E298A9 /* SVNClient.m */; };
 		E2004A520F3D64680025B23C /* SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CB96940F3CD5020072DD9D /* SystemInfo.m */; };
 		E2004A530F3D64690025B23C /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = E24D2A3C0E92F29200E298A9 /* Task.m */; };
 		E2004A540F3D646A0025B23C /* NetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E230C2FF0F37E99D00421E40 /* NetworkReachability.m */; };
@@ -154,8 +151,6 @@
 		E24D2A350E92F29200E298A9 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
 		E24D2A360E92F29200E298A9 /* Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keychain.m; sourceTree = "<group>"; };
 		E24D2A370E92F29200E298A9 /* Keychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keychain.h; sourceTree = "<group>"; };
-		E24D2A380E92F29200E298A9 /* SVNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVNClient.m; sourceTree = "<group>"; };
-		E24D2A390E92F29200E298A9 /* SVNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVNClient.h; sourceTree = "<group>"; };
 		E24D2A3C0E92F29200E298A9 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		E24D2A3D0E92F29200E298A9 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		E24D2A3E0E92F29200E298A9 /* DiskImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskImageController.m; sourceTree = "<group>"; };
@@ -170,8 +165,6 @@
 		E24D2ABB0E92F35B00E298A9 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
 		E24D2ACC0E92F38000E298A9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		E24D2AD00E92F3A800E298A9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		E24D2B960E92F40600E298A9 /* libsvn_client-1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsvn_client-1.dylib"; path = "usr/lib/libsvn_client-1.dylib"; sourceTree = SDKROOT; };
-		E24D2B980E92F40600E298A9 /* libsvn_subr-1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsvn_subr-1.dylib"; path = "usr/lib/libsvn_subr-1.dylib"; sourceTree = SDKROOT; };
 		E24D2B9A0E92F41300E298A9 /* libapr-1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libapr-1.dylib"; path = "usr/lib/libapr-1.dylib"; sourceTree = SDKROOT; };
 		E24D2BE70E948BAC00E298A9 /* TestUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtilities.m; sourceTree = "<group>"; };
 		E24D2BE90E948BE100E298A9 /* TestExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestExtensions.m; sourceTree = "<group>"; };
@@ -269,8 +262,6 @@
 				E2004A460F3D645E0025B23C /* IOKit.framework in Frameworks */,
 				E2004A470F3D645E0025B23C /* libcrypto.dylib in Frameworks */,
 				E2004A480F3D645F0025B23C /* libz.dylib in Frameworks */,
-				E2004A490F3D645F0025B23C /* libsvn_client-1.dylib in Frameworks */,
-				E2004A4A0F3D64600025B23C /* libsvn_subr-1.dylib in Frameworks */,
 				E2004A4B0F3D64600025B23C /* libapr-1.dylib in Frameworks */,
 				727A64510F4BA75700CBC567 /* libcurl.dylib in Frameworks */,
 				E2DCBB4D10ABF5D400AEC193 /* libxml2.dylib in Frameworks */,
@@ -350,8 +341,6 @@
 				E2DCBB2910ABF4C900AEC193 /* MiniXMLParser.m */,
 				E2A82D870F798BA400A4B20C /* StreamCoding.h */,
 				E2A82D880F798BA400A4B20C /* StreamCoding.m */,
-				E24D2A390E92F29200E298A9 /* SVNClient.h */,
-				E24D2A380E92F29200E298A9 /* SVNClient.m */,
 				23CB96930F3CD5020072DD9D /* SystemInfo.h */,
 				23CB96940F3CD5020072DD9D /* SystemInfo.m */,
 				E24D2A3D0E92F29200E298A9 /* Task.h */,
@@ -375,8 +364,6 @@
 				E24D2E4B0E95E95700E298A9 /* IOKit.framework */,
 				E24D2ABB0E92F35B00E298A9 /* libcrypto.dylib */,
 				E24D2ACC0E92F38000E298A9 /* libz.dylib */,
-				E24D2B960E92F40600E298A9 /* libsvn_client-1.dylib */,
-				E24D2B980E92F40600E298A9 /* libsvn_subr-1.dylib */,
 				E24D2B9A0E92F41300E298A9 /* libapr-1.dylib */,
 				727A64500F4BA75700CBC567 /* libcurl.dylib */,
 				E2DCBB4C10ABF5D400AEC193 /* libxml2.dylib */,
@@ -594,9 +581,15 @@
 /* Begin PBXProject section */
 		E24D28460E9295B000E298A9 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = E24D28490E9295B000E298A9 /* Build configuration list for PBXProject "UnitTests" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = E24D28440E9295B000E298A9;
 			productRefGroup = E24D285D0E9295D300E298A9 /* Products */;
 			projectDirPath = "";
@@ -624,7 +617,6 @@
 				E2004A4E0F3D64650025B23C /* Keychain.m in Sources */,
 				E2004A4F0F3D64660025B23C /* LoginItems.m in Sources */,
 				E2004A500F3D64670025B23C /* MD5.m in Sources */,
-				E2004A510F3D64670025B23C /* SVNClient.m in Sources */,
 				E2004A520F3D64680025B23C /* SystemInfo.m in Sources */,
 				E2004A530F3D64690025B23C /* Task.m in Sources */,
 				E2004A540F3D646A0025B23C /* NetworkReachability.m in Sources */,
@@ -689,11 +681,7 @@
 		E20048EA0F3D641B0025B23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"${SDKROOT}/usr/include/libxml2",
-					"${SDKROOT}/usr/include/subversion-1",
-					"${SDKROOT}/usr/include/apr-1",
-				);
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				PRODUCT_NAME = UnitTests;
 			};
 			name = Debug;
@@ -701,11 +689,7 @@
 		E20048EB0F3D641B0025B23C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"${SDKROOT}/usr/include/libxml2",
-					"${SDKROOT}/usr/include/subversion-1",
-					"${SDKROOT}/usr/include/apr-1",
-				);
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				PRODUCT_NAME = UnitTests;
 			};
 			name = Release;
@@ -713,10 +697,6 @@
 		E225A8000F44E8C800023F66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"/usr/include/subversion-1",
-					"/usr/include/apr-1",
-				);
 				PRODUCT_NAME = UnitTests;
 			};
 			name = Debug;
@@ -724,10 +704,6 @@
 		E225A8010F44E8C800023F66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"/usr/include/subversion-1",
-					"/usr/include/apr-1",
-				);
 				PRODUCT_NAME = UnitTests;
 			};
 			name = Release;
@@ -736,8 +712,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E29399A81099BD7100BA5DB6 /* Debug.xcconfig */;
 			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-				SDKROOT = macosx10.5;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -745,8 +721,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E29399A91099BD7100BA5DB6 /* Release.xcconfig */;
 			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-				SDKROOT = macosx10.5;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

@@ -21,7 +21,6 @@
 #import "MD5.h"
 #import "Task.h"
 #import "DiskImageController.h"
-#import "SVNClient.h"
 #import "LoginItems.h"
 #import "SystemInfo.h"
 #import "WorkerThread.h"
@@ -30,7 +29,6 @@
 #define kKeychainService @"unit-testing"
 #define kLogin @"polkit"
 #define kPassword @"info@pol-online.net"
-#define kSVNURL @"http://polkit.googlecode.com/svn/trunk/_UnitTests"
 #define kURLWithoutPassword @"ftp://foo@example.com/path"
 #define kURLWithPassword @"ftp://foo:bar@example.com/path"
 
@@ -174,35 +172,6 @@
 	AssertNil([controller infoForDiskImageAtPath:imagePath password:nil], nil);
 	AssertNotNil([controller infoForDiskImageAtPath:imagePath password:kPassword], nil);
 	AssertTrue([manager removeItemAtPath:imagePath error:&error], [error localizedDescription]);
-}
-
-- (void) testSVN
-{
-	NSString*				path = [@"/tmp" stringByAppendingPathComponent:[[NSProcessInfo processInfo] globallyUniqueString]];
-	NSError*				error;
-	SVNClient*				client;
-	
-	AssertNotNil([SVNClient infoForURL:kSVNURL], nil);
-	
-	AssertTrue([SVNClient exportURL:kSVNURL toPath:path], nil);
-	AssertTrue([[NSFileManager defaultManager] removeItemAtPath:path error:&error], [error localizedDescription]);
-	
-	AssertTrue([SVNClient checkOutURL:kSVNURL toPath:path], nil);
-	AssertNotNil([SVNClient infoForPath:path], nil);
-	
-	client = [[SVNClient alloc] initWithRepositoryPath:path];
-	AssertNotNil(client, nil);
-	AssertNotNil([client infoForPath:@"Image.jpg"], nil);
-	AssertNotNil([client statusForPath:@"."], nil);
-	AssertTrue([client setProperty:kPassword forPath:@"." key:kLogin], nil);
-	AssertEqualObjects([client propertyForPath:@"." key:kLogin], kPassword, nil);
-	AssertTrue([[client statusForPath:@"."] count], nil);
-	AssertTrue([client removePropertyForPath:@"." key:kLogin], nil);
-	AssertFalse([[client statusForPath:@"."] count], nil);
-	AssertTrue([client updatePath:@"UnitTests.xcodeproj" revision:([client updatePath:@"UnitTests.xcodeproj"] - 1)], nil);
-	[client release];
-	
-	AssertTrue([[NSFileManager defaultManager] removeItemAtPath:path error:&error], [error localizedDescription]);
 }
 
 - (void) testSystemInfo

@@ -1,14 +1,5 @@
-ARCHS[sdk=macosx10.4*] = i386 ppc
-ARCHS[sdk=macosx10.5*] = i386 ppc
-ARCHS[sdk=macosx10.6*] = i386 x86_64
 ALWAYS_SEARCH_USER_PATHS = NO
-PREBINDING = NO
-GCC_MODEL_TUNING = G5
 GCC_C_LANGUAGE_STANDARD = c99
 GCC_PREFIX_HEADER = Prefix.pch
 GCC_PRECOMPILE_PREFIX_HEADER = YES
 WARNING_CFLAGS = -Wall -Winline
-//GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64*] = YES
-//-Wundef
-//-Wno-protocol
-//-Wundeclared-selector
