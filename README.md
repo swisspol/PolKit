@@ -2,4 +2,4 @@
 
 The code is clean, ready to be used in your project, self-documented and has unit tests. Most classes are also independent from each other, so you can just pick what you need.
 
-The entire project is available open-source under GPLv3 license.
+This source code is copyrighted Pierre-Olivier Latour and available under the terms of the GPLv3 license.
